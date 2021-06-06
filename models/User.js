@@ -7,6 +7,15 @@ const userSchema = new Schema({
   phone: String,
   address: String,
   password: String,
+  registerDate: {
+    type: Date,
+    default: Date.now,
+  },
+  userRole: {
+    type: String,
+    default: 'User',
+    roles: ['User', 'Admin'],
+  },
 });
 
 module.exports = User = mongoose.model('User', userSchema);
