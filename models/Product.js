@@ -18,6 +18,10 @@ const productSchema = new Schema({
     type: Number,
     required: true,
   },
+  quantity: {
+    type: Number,
+    required: true,
+  },
   date_added: {
     type: Date,
     default: Date.now,
