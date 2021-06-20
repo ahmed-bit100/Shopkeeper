@@ -11,6 +11,10 @@ const userSchema = new Schema({
     type: Date,
     default: Date.now,
   },
+  // cart: {
+  //   type: Array,
+  //   default: [],
+  // },
   userRole: {
     type: String,
     default: 'User',

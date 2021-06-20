@@ -30,7 +30,7 @@ exports.addProducts = async (req, res) => {
     res.status(500).json({errors: error.message});
   }
 };
-// adri
+
 // delete products
 exports.deleteProducts = async (req, res) => {
   try {
