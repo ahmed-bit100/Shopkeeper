@@ -20,7 +20,9 @@ const Footer = () => {
       </div>
 
       <div className="ft-links">
-        <Link className="ft-link">About us</Link>
+        <Link to="/about" className="ft-link">
+          About this project
+        </Link>
         <Link className="ft-link">Contact</Link>
         <Link className="ft-link">Support</Link>
       </div>
