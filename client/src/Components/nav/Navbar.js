@@ -14,8 +14,12 @@ const Navbar = () => {
         <Link className="link">Clothing</Link>
         <Link className="link">Footwear</Link>
         <Link className="link">Accessories</Link>
-        <Link className="link">Sign in</Link>
-        <Link className="link">Sign up</Link>
+        <Link to="/SignIn" className="link">
+          Sign in
+        </Link>
+        <Link to="/SignUp" className="link">
+          Sign up
+        </Link>
       </div>
     </div>
   );

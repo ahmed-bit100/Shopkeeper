@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {getProducts} from '../../redux/actions';
 import ProductCard from './ProductCard';
+import './list.css';
+import {getProducts} from '../../redux/actions/productActions';
 
 const ProductList = () => {
   const dispatch = useDispatch();
@@ -15,7 +16,7 @@ const ProductList = () => {
       {loading ? (
         <h1> loading... </h1>
       ) : (
-        <div>
+        <div className="list">
           {products.map((el, i) => (
             <ProductCard product={el} key={i} />
           ))}

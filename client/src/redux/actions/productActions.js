@@ -1,9 +1,9 @@
+import axios from 'axios';
 import {
   GET_PRODUCTS,
   GET_PRODUCTS_FAIL,
   GET_PRODUCTS_SUCCESS,
-} from './actionTypes';
-import axios from 'axios';
+} from '../actionTypes';
 
 export const getProducts = () => async (dispatch) => {
   dispatch({
